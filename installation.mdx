@@ -1,34 +1,50 @@
 ---
-title: 'Development'
-description: 'Learn how to preview changes locally'
+title: "Get started"
+description: "Learn how to setup Zodaf on your project"
+icon: "rocket"
 ---
 
 <Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding.
+	**Prerequisite**: You must have a React project initialized and zod
+	installed on it to use Zodaf.
 </Info>
 
-Step 1. Install Mintlify on your OS:
+Step 1. Install Zodaf on your project:
 
 <CodeGroup>
 
 ```bash npm
-npm i -g mintlify
+npm i @zodaf/react
+```
+
+```bash pnpm
+pnpm i @zodaf/react
 ```
 
 ```bash yarn
-yarn global add mintlify
+yarn add @zodaf/react
 ```
 
 </CodeGroup>
 
-Step 2. Go to the docs are located (where you can find `mint.json`) and run the following command:
+Step 2. To initialize Zodaf configuration, run the following command:
 
-```bash
-mintlify dev
+<CodeGroup>
+```bash npm
+npx @zodaf/react init
 ```
 
-The documentation website is now available at `http://localhost:3000`.
+```bash pnpm
+pnpm dlx @zodaf/react init
+```
 
+```bash yarn
+yarn dlx @zodaf/react init
+```
+
+</CodeGroup>
+Your project can now use `Zodaf`.
+{/* 
 ### Custom Ports
 
 Mintlify uses port 3000 by default. You can use the `--port` flag to customize the port Mintlify runs on. For example, use this command to run in port 3333:
@@ -62,14 +78,14 @@ yarn global upgrade mintlify
 ## Deployment
 
 <Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
+	Unlimited editors available under the [Pro
+	Plan](https://mintlify.com/pricing) and above.
 </Tip>
 
 You should see the following if the deploy successfully went through:
 
 <Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
+	<img src="/images/checks-passed.png" style={{ borderRadius: "0.5rem" }} />
 </Frame>
 
 ## Troubleshooting
@@ -94,4 +110,4 @@ Repeat step 3.
   </Accordion>
 </AccordionGroup>
 
-Curious about what changed in a CLI version? [Check out the CLI changelog.](/changelog/command-line)
+Curious about what changed in a CLI version? [Check out the CLI changelog.](/changelog/command-line) \*/}
